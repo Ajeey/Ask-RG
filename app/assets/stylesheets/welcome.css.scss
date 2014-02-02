@@ -1,0 +1,38 @@
+#content {
+  margin-top: 50px;
+}
+
+#search {
+  input {
+    width: 90%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 0px;
+  }
+}
+
+#answer {
+  //display: none;
+  font-size: 22px;
+  line-height: 30px;
+  font-style: italic;
+}
+
+#ask {
+  border-radius: 0px;
+  width: 20%;
+}
+
+#answer:before {
+  content:"\201C";
+  //content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+
+}
+
+small {
+  //display: none;
+}

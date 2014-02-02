@@ -1,0 +1,27 @@
+doctype 5
+html
+  head
+    title AskRG
+    meta charset="utf-8"
+
+    = yield :pre_stylesheets
+    = stylesheet_link_tag 'application', media: 'all'
+    = yield :post_stylesheets
+
+    = csrf_meta_tags
+
+  body
+    = render partial: "/layouts/header"
+    #content
+      .notice
+        = notice
+    //.alert
+    //  = alert
+    
+    = yield
+    
+    = render partial: "/layouts/footer"
+
+    = yield :pre_javascripts
+    = javascript_include_tag 'application'
+    = yield :post_javascripts
