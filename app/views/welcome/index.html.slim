@@ -1,14 +1,19 @@
 .container-fluid
   .row-fluid
-    .span8.well.offset2
+    .span8.offset2.wrapper
       .form
-        h2.text-center Ask Rahul anything
+        h2.text-center Ask Rahul Anything!
         br
         br
         #search.text-center
-          input type="text" placeholder="Type your question here..."
+          input type="text" placeholder="Go ahead, type your question here..."
           br
           = link_to "ASK !", "#", class: 'btn btn-large btn-info', id: 'ask'
+  .row-fluid
+    .span1.offset5
+      #loading.pull-right
+  br
+  br
   #ans
     .row-fluid
       .span8.well.offset2

@@ -1,3 +1,23 @@
+body {
+  background-image: url(ra.jpeg);
+}
+
+.wrapper {
+  background-color: rgba(0,0,0,0.4);
+  .form {
+    color: white;
+    padding: 20px 0;
+  }
+}
+
+#loading {
+  background-image: url(ajax_green.gif);
+  background-repeat: none;
+  width: 24px;
+  height: 24px;
+  display: none;
+}
+
 #content {
   margin-top: 50px;
 }
@@ -39,4 +59,8 @@
 
 small {
   display: none;
+}
+
+small::before {
+  content: "\00a0 \00a0 ";
 }

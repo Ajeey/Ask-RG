@@ -36,10 +36,17 @@ $(document).ready(function(){
       alert(" Ask a question, trying to fool me huh?");
     } else {
       message = answers[Math.floor(Math.random() * answers.length)];
-      
-      $('#ans > .row-fluid').show();
-      $('#answer').show().html(message);
-      $('small').show();
+
+      $('#loading').show();
+
+      var timer = setInterval(getAnswer, 1500);
+
+      function getAnswer() {
+        $('#loading').hide();
+        $('#ans').show();
+        $('#answer').show().html(message);
+        $('small').show();
+      }
       
     }
   });
