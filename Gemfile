@@ -27,7 +27,7 @@ end
 gem 'jquery-rails'
 gem 'slim-rails'
 
-gem 'rack-google_analytics', :require => "rack/google_analytics"
+#gem 'rack-google_analytics', :require => "rack/google_analytics"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

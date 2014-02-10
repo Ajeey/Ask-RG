@@ -62,6 +62,6 @@ module Askrg
     config.assets.initialize_on_precompile = false
 
     # google analytics
-    config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-47890219-1")
+    #config.middleware.use("Rack::GoogleAnalytics", :web_property_id => "UA-47890219-1")
   end
 end
